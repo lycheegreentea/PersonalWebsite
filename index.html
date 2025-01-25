@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+
+        <link rel="stylesheet" href="personalWebsite.css">
+    </header>
+    <body>
+
+    <div class="typing-effect">
+        <span style="--i:1">L</span><span style="--i:2">a</span><span style="--i:3">u</span><span style="--i:4">r</span><span style="--i:5">e</span><span style="--i:6">n</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="--i:7">C</span><span style="--i:8">h</span><span style="--i:9">e</span><span style="--i:10">n</span>
+    </div>
+
+    <nav class = "navbar">
+        <ul>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Events">Events</a></div>
+          <li><a href="#Photos">Photos</a></div>
+
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hover-effect">
+        <a href="https://github.com/lycheegreentea"><img src="GitHubLogo.png" alt="Github Logo" id="catlogo"></a>
+        </div>
+
+    <hr style="width:100%;height:2px;border-width:0;background-color:rgb(36, 0, 61)">    
+    <div class ="Projects">
+
+    <p id="intro">Hi! I'm passionate about coding and making cool projects and I hope you enjoy my website! </p>
+    <hr style="width:100%;height:2px;border-width:0;background-color:rgb(36, 0, 61)"> 
+        <h2 id="Projects">Projects-hyperlinked:</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://lycheegreentea.github.io/StudyQuote/">
+                <p>StudyQuote:Generates motivational quotes for studying and reminds you to stay focused when you attempt to move to another tab.</p>
+                </a>
+            </div>
+            <div class="grid-item">
+                <p>More to come...</p>
+            </div>
+
+    </div>
+    <h2 id="Events">Events:</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Coming Soon...</p>
+        </div>
+    </div>
+    
+    <h2 id="Photos">Photos:</h2>
+    <div class="grid-container" id="finalgrid">
+        <div class="grid-item">
+            <img src="Hydra.JPG" alt="View of mountains from a plane">
+            <p>HYDRA VULGARIS!! 🔬</p>
+        </div>
+        <div class="grid-item">
+            <img src="Flowers.jpg" alt="View of mountains from a plane">
+            <p>Some nice flowers 🌸</p>
+        </div>
+        <div class="grid-item">
+            <img src="ViewFromAscend.JPG" alt="View of mountains from a plane">
+            <p>View From Ascend!! 🚀</p>
+        </div>
+        <div class="grid-item">
+            <img src="PlaneView.JPG" alt="View of mountains from a plane">
+            <p>View of mountains  ✈️</p>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" loop>
+        <source src="sweetcafe.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="playerUI">
+        <button id="playPauseButton" onclick="togglePlayPause()">▶</button>
+        <span id="songName">No song playing</span>
+    </div>
+    
+    <script>
+        var audioPlayer = document.getElementById('audioPlayer');
+        var playPauseButton = document.getElementById('playPauseButton');
+        var songName = document.getElementById('songName');
+        
+        var songTitle = "sweet cafe by Stream Cafe";  
+        function togglePlayPause() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseButton.innerHTML = "❚❚";  
+                songName.textContent = songTitle;  
+            } else {
+                audioPlayer.pause();
+                playPauseButton.innerHTML = "▶";  
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
+
