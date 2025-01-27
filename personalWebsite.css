@@ -103,7 +103,10 @@ img{
 html {
     scroll-behavior: smooth;
 }
-
+#qr {
+    width:20%;
+    height:auto;
+}
 /* GRIDS */
 .grid-item {
     border: 2px solid #612d79af; 
