@@ -171,3 +171,34 @@ a{
 #songName {
     font-size: 12px;
 }
+
+.typewriter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter {
+  display: inline-block;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  animation: typing 2s steps(12, end) forwards, blink 0.75s step-end infinite;
+  font-size: 450%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch; /* Match the number of characters */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
